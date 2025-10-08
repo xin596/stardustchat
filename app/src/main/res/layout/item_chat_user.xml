@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="end"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/tvMessage"
+        android:background="@drawable/bg_bubble_user"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:maxWidth="240dp"
+        android:textSize="16sp"
+        android:textIsSelectable="true"/>
+
+    <!-- 操作按钮 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="4dp">
+
+        <!-- 编辑按钮（画笔图标） -->
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_edit"
+            android:contentDescription="编辑"/>
+
+        <!-- 复制按钮（复制图标） -->
+        <ImageButton
+            android:id="@+id/btnCopy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_copy"
+            android:contentDescription="复制"/>
+    </LinearLayout>
+</LinearLayout>
