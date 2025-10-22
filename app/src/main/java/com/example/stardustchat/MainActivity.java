@@ -369,7 +369,7 @@ public class MainActivity extends AppCompatActivity
     private void sendUserMessage(String message, int thinkingIndex) {
         // 构造 JSON 请求体
         String json = "{"
-                + "\"model\":\"zai-org/GLM-4.5V\","
+                + "\"model\":\"your_model_id\","
                 + "\"messages\":[{\"role\":\"user\",\"content\":\"" + message + "\"}],"
                 + "\"tokens\": 6400"
                 + "}";
@@ -379,9 +379,9 @@ public class MainActivity extends AppCompatActivity
 
         // 构建 HTTP 请求
         Request request = new Request.Builder()
-                .url("https://api.siliconflow.cn/v1/chat/completions")
+                .url("your_api_url")
                 .post(body)
-                .addHeader("Authorization", "Bearer sk-xwwihipuwtfvhdbsisfeeqjhurtkbdzxicaypnthfcwwmnkj")
+                .addHeader("Authorization", "Bearer your_api_key")
                 .build();
 
         // 创建 HTTP 客户端，设置超时时间
